@@ -1,0 +1,151 @@
+.newTask {
+  width: 100%;
+  padding: 20px;
+}
+
+.newTask__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.newTask__container label {
+  width: 100%;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.newTask__container input,
+.newTask__container textarea {
+  resize: none;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #555;
+  outline: none;
+  border-radius: 6px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.newTask__container textarea {
+  overflow-y: auto;
+}
+
+.newTask__container button {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  background-color: #735ccb;
+  color: white;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.dropdown {
+  width: 100%;
+  margin: 10px;
+  background-color: white;
+  border-radius: 6px;
+  position: relative;
+}
+
+.dropdown__selector {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border-bottom: 1px solid #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dropdown__selector .dropdown__selectAllCheckbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 130px;
+  height: 100%;
+}
+
+.dropdown__selector .dropdown__selectAllCheckbox label,
+.dropdown__selector .dropdown__selectAllCheckbox input {
+  margin: 0;
+}
+
+.dropdown__alloptions {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  left: 0;
+  right: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 10;
+  display: none;
+}
+
+.dropdown__option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dropdown__option:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown__option .dropdown_mentorProfile {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.dropdown__option .dropdown_mentorProfile img {
+  width: 100%;
+  height: 100%;
+}
+
+.selected {
+  background-color: #735ccb;
+  color: white;
+}
+/*# sourceMappingURL=NewTask.css.map */

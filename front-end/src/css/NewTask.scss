@@ -1,0 +1,122 @@
+@import "./variables";
+
+.newTask {
+  width: 100%;
+  padding: 20px;
+}
+.newTask__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  // background-color: crimson;
+  label {
+    width: 100%;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    // background-color: cyan;
+  }
+  input,
+  textarea {
+    resize: none;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #555;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: none ;
+  }
+  textarea {
+    overflow-y: auto;
+  }
+  button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    background-color: $violet;
+    color: white;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px;
+    cursor: pointer;
+  }
+}
+
+.dropdown {
+  width: 100%;
+  margin: 10px;
+  background-color: white;
+  border-radius: 6px;
+  position: relative;
+  // border-bottom: 2px solid black;
+}
+
+.dropdown__selector {
+  // background-color: yellow;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .dropdown__selectAllCheckbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 100%;
+    label,
+    input {
+      margin: 0;
+    }
+  }
+}
+
+.dropdown__alloptions {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  left: 0;
+  right: 0;
+  // bottom:0;
+  // border: 2px solid black;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 10;
+  display: none;
+}
+
+.dropdown__option {
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+  }
+  .dropdown_mentorProfile {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 10px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.selected {
+  background-color: $violet;
+  color: white;
+}

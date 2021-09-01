@@ -1,0 +1,37 @@
+
+
+
+.student__details>input,.mentor__details>input{
+  margin:5px;
+  border:none;
+  width:100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  padding:10px;
+  &:focus{
+    border:none;
+    outline:none;
+  }
+}
+
+.student__details>select,.mentor__details>select{
+  margin:5px;
+  border:none;
+  width:100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  padding:10px;
+  &:focus{
+    border:none;
+    outline:none;
+  } 
+}
+
+.student__details>select option,.mentor__details>select option{
+  margin:5px;
+  border:none;
+  width:100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  padding:10px;
+}
